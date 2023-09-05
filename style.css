@@ -1,0 +1,114 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(100, 100, 100);
+    text-align: center;
+}
+
+h3 {
+    padding-left: 5px;
+    text-align: left;
+}
+
+.main {
+    border: 1px gray solid;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner {
+    padding-top: 10px;
+    width: 95%;
+    height: 150px;
+}
+
+.introduction {
+    padding: 5px;
+    text-align: justify;
+}
+
+.retseptid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.retseptid a {
+    border: 1px black solid;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: smaller;
+    color: white;
+}
+
+footer {
+    padding: 10px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.italy {
+    background-image: url(pitsa.jpg);
+}
+
+.estonia {
+    background-image: url(oatmeal.jpg);
+}
+
+.asia {
+    background-image: url(wok.jpg);
+}
+
+.cooks {
+    display: none;
+}
+
+
+@media screen and (min-width: 434px) {
+    hr {
+        visibility: hidden;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .about {
+        padding-left: 10%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cooks {
+        display: inline-block;
+        padding-left: 20%;
+    }
+
+    .retseptid {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #retseptid {
+        visibility: hidden;
+    }
+}
